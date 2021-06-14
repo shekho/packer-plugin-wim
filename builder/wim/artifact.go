@@ -1,11 +1,8 @@
-package ecs
+package wim
 
 import (
 	"fmt"
 	"log"
-
-	"github.com/huaweicloud/golangsdk"
-	"github.com/huaweicloud/golangsdk/openstack/imageservice/v2/images"
 )
 
 // Artifact is an artifact implementation that contains built images.
@@ -15,9 +12,6 @@ type Artifact struct {
 
 	// BuilderIdValue is the unique ID for the builder that created this image
 	BuilderIdValue string
-
-	// IMS client for performing API stuff.
-	Client *golangsdk.ServiceClient
 }
 
 func (a *Artifact) BuilderId() string {
@@ -43,5 +37,5 @@ func (a *Artifact) State(name string) interface{} {
 
 func (a *Artifact) Destroy() error {
 	log.Printf("Destroying image: %s", a.ImageId)
-	return images.Delete(a.Client, a.ImageId).ExtractErr()
+	return nil
 }

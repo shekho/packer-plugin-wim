@@ -1,4 +1,4 @@
-NAME=huaweicloud
+NAME=wim
 BINARY=packer-plugin-${NAME}
 PLUGIN_DIR = ~/.packer.d/plugins
 PLUGIN_FILE = ${PLUGIN_DIR}/${BINARY}

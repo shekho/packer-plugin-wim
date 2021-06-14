@@ -1,6 +1,6 @@
 //go:generate packer-sdc mapstructure-to-hcl2 -type Config
 
-package ecs
+package wim
 
 import (
 	"context"
@@ -15,7 +15,7 @@ import (
 )
 
 // The unique ID for this builder
-const BuilderId = "huawei.huaweicloud"
+const BuilderId = "microsoft.wim"
 
 type Config struct {
 	common.PackerConfig `mapstructure:",squash"`
