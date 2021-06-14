@@ -58,6 +58,8 @@ func (b *Builder) Run(ctx context.Context, ui packer.Ui, hook packer.Hook) (pack
 	state.Put("hook", hook)
 	state.Put("ui", ui)
 
+	ui.Say("~~~~~~~~~wimbuilder.Run~~~~~~~~~")
+
 	// Build the steps
 	steps := []multistep.Step{}
 
