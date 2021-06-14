@@ -4,6 +4,7 @@
 *.dll
 *.so
 *.dylib
+*.zip
 
 # Test binary, built with `go test -c`
 *.test
@@ -15,3 +16,4 @@
 # vendor/
 
 packer.pkr.hcl
+packer-plugin-wim_v0.0.1_SHA256SUMS
