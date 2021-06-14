@@ -6,7 +6,7 @@ import (
 
 	"github.com/hashicorp/packer-plugin-sdk/plugin"
 	"github.com/hashicorp/packer-plugin-sdk/version"
-	wim "github.com/shekho/packer-builder-wim/builder/wim"
+	wim "github.com/shekho/packer-plugin-wim/builder/wim"
 )
 
 var (

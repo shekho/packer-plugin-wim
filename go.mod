@@ -1,4 +1,4 @@
-module github.com/shekho/packer-builder-wim
+module github.com/shekho/packer-plugin-wim
 
 go 1.16
 
