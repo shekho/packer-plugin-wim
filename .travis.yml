@@ -1,0 +1,24 @@
+dist: bionic
+sudo: required
+services:
+  - docker
+language: go
+go:
+  - "1.16.x"
+
+install:
+- make install
+
+script:
+- make test
+- make vet
+
+branches:
+  only:
+  - master
+matrix:
+  fast_finish: true
+  allow_failures:
+  - go: tip
+env:
+  - GO111MODULE=on
